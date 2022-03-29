@@ -1,2 +1,2 @@
 # Webserver-GOlang
-Build a webserver using golang
+Build a webserver using net/https library in golang
