@@ -1,0 +1,12 @@
+version: 2.1
+orbs:
+  pulumi: pulumi/pulumi@x.y
+jobs:
+  build:
+    docker:
+      - image: 'circleci/node:10'
+    working_directory: ~/repo/
+    steps:
+      - pulumi/login:
+          version: 16.0.2
+          access-token: 'pul-e3da75022f85a2bb138630fba5b5424d2b25dd55'
